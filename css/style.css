@@ -21,7 +21,10 @@ p,h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
  
 }
-img{display: block;}
+img{display: block;
+max-width: 100%;
+height: auto;}
+
 
 .container {
   width: 100%;
@@ -30,6 +33,12 @@ img{display: block;}
    padding-right: 15px;
     margin: 0 auto;
   outline: 2px solid red;}
+
+  .header:first-child{
+    display: flex;
+    width: 1158px;
+
+  }
     
 
 :root {
@@ -52,9 +61,12 @@ body {
  .header{
   padding-top: 25.5px ;
   padding-bottom: 25.5px;
-
- }
-
+  border-bottom: 1px solid #e7e9fc;
+}
+.nav{
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -64,6 +76,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -83,12 +96,21 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+
 }
 
 .listmenu-item {
   color: var(--span-color);
   letter-spacing: 0.02em;
   line-height: 1.5;
+}
+.listmenu-item:not(:last-child){
+  margin-right: 40px;
+}
+.listmenu-item:last-child{
+  margin-right: 0;
 }
 
 .listmenu :hover,
@@ -127,7 +149,8 @@ body {
 .sectionone {
   background: var(--span-color);
   font-size: 56px;
-  padding: 188px 472px 188px 472px;
+  padding-top: 188px; 
+  padding-bottom: 188px;
  
 }
 
@@ -139,8 +162,8 @@ body {
   text-align: center;
   line-height: 1.07;
   color: var(--white-color);
-  width: 496px;
-  height: 120px;
+  
+  max-width: 496px; 
 }
 
 .button {
@@ -151,6 +174,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
+  max-width: 496px; 
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--brand-color);
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -236,6 +266,7 @@ body {
 
 .sectionfour-li {
   background-color: var(--white-color);
+
 }
 
 .sectionfour-firstname {
