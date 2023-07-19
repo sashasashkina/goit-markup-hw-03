@@ -1,13 +1,14 @@
 * {
-  padding: o;
-  margin: 0;
-  border: 0;
+
 }
 
 *::before,
 *::after {}
 
 ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -15,19 +16,21 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
+p,h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+ 
 }
 img{display: block;}
 
 .container {
-  max-width: 1158px;
-  padding-left:
-   padding-right:
-    margin-left:
-     margin-right:
-}
+  width: 100%;
+  max-width: 1128px;
+  padding-left: 15px;
+   padding-right: 15px;
+    margin: 0 auto;
+  outline: 2px solid red;}
+    
 
 :root {
   --brand-color: #4d5ae5;
@@ -45,6 +48,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--paragraf-color);
 }
+
+ .header{
+  padding-top: 25.5px ;
+  padding-bottom: 25.5px;
+
+ }
+
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -117,18 +127,20 @@ body {
 .sectionone {
   background: var(--span-color);
   font-size: 56px;
-
+  padding: 188px 472px 188px 472px;
+ 
 }
+
 
 .type {
   font-family: Roboto;
   font-size: 56px;
-
-
   letter-spacing: 1.12px;
   text-align: center;
   line-height: 1.07;
   color: var(--white-color);
+  width: 496px;
+  height: 120px;
 }
 
 .button {
@@ -154,6 +166,21 @@ body {
 
 .sectiontwo {
   list-style: none;
+  padding-top:120px;
+  padding-bottom: 120px; 
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .sked-list {
@@ -162,6 +189,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--span-color);
+  margin-bottom: 18px;
 }
 
 .sked-paragraf {
@@ -173,6 +201,7 @@ body {
 /* section3 */
 .sectionthree {
   list-style: none;
+  padding-top: 120px;
 }
 
 .sectionthree-maintitle {
@@ -181,11 +210,18 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--span-color);
+  max-width: 320px;
+  margin: 0 auto;
+}
+.sectionthree-pictures{
+  padding-top: 80px;
 }
 
 /* section4 */
 .sectionfour {
   background-color: var(--paragraf-tooter);
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .sectionfour-ourteam {
@@ -219,6 +255,7 @@ body {
 
 .footer {
   background-color: var(--span-color);
+  padding: 101,5px 1020px 100px 156px;
 }
 
 .span {
