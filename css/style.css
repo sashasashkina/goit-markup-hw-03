@@ -1,6 +1,4 @@
-* {
-
-}
+* {}
 
 *::before,
 *::after {}
@@ -16,30 +14,34 @@ li {
   list-style: none;
 }
 
-p,h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
- 
+
 }
-img{display: block;
-max-width: 100%;
-height: auto;}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 
 .container {
   width: 100%;
   max-width: 1128px;
   padding-left: 15px;
-   padding-right: 15px;
-    margin: 0 auto;
-  outline: 2px solid red;}
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 
-  .header:first-child{
-    display: flex;
-    width: 1158px;
+.header>.container{
+  display: flex;
+  width: 1158px;
 
-  }
-    
+}
+
 
 :root {
   --brand-color: #4d5ae5;
@@ -58,12 +60,13 @@ body {
   color: var(--paragraf-color);
 }
 
- .header{
-  padding-top: 25.5px ;
+.header {
+  padding-top: 25.5px;
   padding-bottom: 25.5px;
   border-bottom: 1px solid #e7e9fc;
 }
-.nav{
+
+.nav {
   display: flex;
   align-items: center;
 }
@@ -102,14 +105,17 @@ body {
 }
 
 .listmenu-item {
+  padding: 24px 0;
   color: var(--span-color);
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-.listmenu-item:not(:last-child){
+
+.listmenu-item:not(:last-child) {
   margin-right: 40px;
 }
-.listmenu-item:last-child{
+
+.listmenu-item:last-child {
   margin-right: 0;
 }
 
@@ -121,6 +127,11 @@ body {
 
 .address {
   font-style: normal;
+ }
+
+.address-item{
+  display: flex;
+  gap: 40px;
 }
 
 .address-item-contact {
@@ -149,9 +160,9 @@ body {
 .sectionone {
   background: var(--span-color);
   font-size: 56px;
-  padding-top: 188px; 
+  padding-top: 188px;
   padding-bottom: 188px;
- 
+
 }
 
 
@@ -162,11 +173,12 @@ body {
   text-align: center;
   line-height: 1.07;
   color: var(--white-color);
-  
-  max-width: 496px; 
+
+  max-width: 496px;
 }
 
 .button {
+  display: block;
   background-color: var(--brand-color);
   color: var(--white-color);
   font-family: "Roboto", sans-serif;
@@ -175,7 +187,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  max-width: 496px; 
+  max-width: 496px;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -196,9 +208,10 @@ body {
 
 .sectiontwo {
   list-style: none;
-  padding-top:120px;
-  padding-bottom: 120px; 
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -206,7 +219,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -243,7 +256,8 @@ body {
   max-width: 320px;
   margin: 0 auto;
 }
-.sectionthree-pictures{
+
+.sectionthree-pictures {
   padding-top: 80px;
 }
 
@@ -286,7 +300,7 @@ body {
 
 .footer {
   background-color: var(--span-color);
-  padding: 101,5px 1020px 100px 156px;
+  padding: 101, 5px 1020px 100px 156px;
 }
 
 .span {
