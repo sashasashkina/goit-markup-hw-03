@@ -49,6 +49,7 @@ img {
   --paragraf-tooter: #F4F4FD;
   --white-color: #ffffff;
   --listmenu-color: #404BBF;
+  --button-color:#e7e9fc;
 }
 
 
@@ -79,7 +80,9 @@ body {
   text-transform: uppercase;
   color: var(--brand-color);
   margin-right: 76px;
+
 }
+
 
 .logo-studio {
   color: var(--span-color);
@@ -324,7 +327,12 @@ body {
 
 .footer {
   background-color: var(--span-color);
-  padding: 101, 5px 1020px 100px 156px;
+  padding: 100px 0;
+
+}
+.footer>.logo{
+  display: inline-block; 
+  margin-bottom: 16px; 
 }
 
 .span {
@@ -338,8 +346,13 @@ body {
 }
 
 /* portfolio */
-
+.section{
+  padding-top: 96px; 
+  padding-bottom: 120px; д
+}
 .section-button {
+  padding: 12px 24px;
+  border: 1px solid var(--button-color); 
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -348,14 +361,24 @@ body {
   color: var(--brand-color);
   background-color: var(--paragraf-tooter);
   cursor: pointer;
+  border-radius: 4px; 
 }
 
 .section-button:hover,
 .section-button:focus {
   color: var(--white-color);
   background-color: var(--listmenu-color);
+  border: 1px solid transparent;
 }
-
+.section-listone {
+  display: flex; 
+  justify-content: center; 
+  gap: 24px; 
+  margin-bottom: 72px;}
+  
+  .section-listone-item{
+    margin-right: 0;
+  }
 /* list2 */
 
 .section-list-images-name {
@@ -372,3 +395,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--paragraf-color);
 }
+
+.section-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+.section-items-images:nth-child(3n+1){
+  margin-right: 0;
+  row-gap: 48px;
+}
+margin-bottom: 0 
