@@ -183,6 +183,9 @@ body {
   color: var(--white-color);
   margin-bottom: 48px;
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .button {
@@ -340,12 +343,12 @@ body {
 .footer {
   background-color: var(--span-color);
   padding: 100px 0;
- 
+  display: inline-block;
 }
 
-.footer>.logo {
-  display: inline-block;
-margin-bottom: 16px;
+.footer-logo {
+
+  margin-bottom: 16px;
 }
 
 .span {
@@ -396,6 +399,7 @@ margin-bottom: 16px;
 .section-listone-item {
   margin-right: 24px;
 }
+
 .section-listone-item:last-child {
   margin-right: 0;
 }
