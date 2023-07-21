@@ -274,15 +274,12 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--span-color);
-
   margin-bottom: 72px;
 }
 
 .sectionthree-pictures {
-
   display: flex;
   gap: 24px;
-
 }
 
 .sectionthree-li {
@@ -294,7 +291,6 @@ body {
 .sectionfour {
   padding: 120px 0;
   background-color: var(--paragraf-tooter);
-
 }
 
 .sectionfour-ourteam {
@@ -344,12 +340,12 @@ body {
 .footer {
   background-color: var(--span-color);
   padding: 100px 0;
-
+ margin-bottom: 16px;
 }
 
 .footer>.logo {
   display: inline-block;
-  margin-bottom: 16px;
+ 
 }
 
 .span {
@@ -394,13 +390,12 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 24px;
-
   margin-bottom: 72px;
-
 }
 
-.section-listone-item {}
-
+.section-listone-item {
+  margin-right: 24px;
+}
 .section-listone-item:last-child {
   margin-right: 0;
 }
@@ -439,5 +434,4 @@ body {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-
 }
