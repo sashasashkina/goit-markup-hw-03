@@ -40,6 +40,7 @@ img {
 .header>.container {
   display: flex;
   width: 1158px;
+  align-items: center;
 }
 
 :root {
@@ -61,8 +62,7 @@ body {
 }
 
 .header {
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -80,8 +80,8 @@ body {
   text-transform: uppercase;
   color: var(--brand-color);
   margin-right: 76px;
-  display: inline-block; 
-  margin-bottom: 16px; 
+  display: inline-block;
+
 
 }
 
@@ -113,6 +113,7 @@ body {
   color: var(--span-color);
   letter-spacing: 0.02em;
   line-height: 1.5;
+  display: block;
 }
 
 .listmenu-item:not(:last-child) {
@@ -131,6 +132,7 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-item {
@@ -167,6 +169,8 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
 
+
+
 }
 
 
@@ -177,7 +181,7 @@ body {
   text-align: center;
   line-height: 1.07;
   color: var(--white-color);
-
+  margin-bottom: 48px;
   max-width: 496px;
 }
 
@@ -198,6 +202,8 @@ body {
   background-color: var(--brand-color);
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover,
@@ -231,7 +237,7 @@ body {
 .sked {
   display: flex;
   gap: 24px;
-  margin-right: 24px;
+
 }
 
 .sked-list {
@@ -268,16 +274,15 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--span-color);
-  max-width: 320px;
-  margin: 0 auto;
+
   margin-bottom: 72px;
 }
 
 .sectionthree-pictures {
-  padding-top: 80px;
+
   display: flex;
   gap: 24px;
-  margin-right: 24px;
+
 }
 
 .sectionthree-li {
@@ -355,6 +360,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--paragraf-tooter);
+  width: 264px;
 }
 
 /* portfolio */
@@ -388,18 +394,17 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 24px;
-  row-gap: 48px;
+
   margin-bottom: 72px;
- 
+
 }
 
-.section-listone-item {
-  margin-right: 24px;
-  width: calc((100% - 48px) / 3);
-}
-.section-listone-item:last-child{
+.section-listone-item {}
+
+.section-listone-item:last-child {
   margin-right: 0;
 }
+
 /* list2 */
 
 .section-list-images-name {
@@ -422,7 +427,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 48px; 
+  row-gap: 48px;
 }
 
 .section-items-images:nth-child(3n+1) {
@@ -434,5 +439,5 @@ body {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
+
 }
