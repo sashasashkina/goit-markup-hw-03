@@ -345,9 +345,9 @@ body {
 
 .footer>.logo {
   display: inline-block;
-
+margin-bottom: 16px;
 }
-.logotwo{ margin-bottom: 16px;}
+
 .span {
   color: var(--paragraf-tooter);
 }
