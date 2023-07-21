@@ -340,14 +340,14 @@ body {
 .footer {
   background-color: var(--span-color);
   padding: 100px 0;
- margin-bottom: 16px;
+ 
 }
 
 .footer>.logo {
   display: inline-block;
- 
-}
 
+}
+.logotwo{ margin-bottom: 16px;}
 .span {
   color: var(--paragraf-tooter);
 }
